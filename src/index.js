@@ -70,7 +70,6 @@ class Player extends React.Component {
       const pb=parseInt(k);
       this.setState({view: 'Done', outcome: intToOutcome[winner],pa: pa,pb: pb}); 
     }
-    informTimeout() { this.setState({view: 'Timeout'}); }
     rollDice(i) { this.state.resolveStep(i ? 1:0); }
     
 }

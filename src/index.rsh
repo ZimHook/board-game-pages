@@ -10,8 +10,7 @@ const Player ={
   Pos: UInt, 
   getStep: Fun([UInt,UInt],UInt),
   seeOutcome: Fun([UInt,UInt,UInt],Null),
-  seePos: Fun([UInt,UInt,UInt],Null),
-  informTimeout: Fun([], Null)
+  seePos: Fun([UInt,UInt,UInt],Null)
 };
 //下注接口
 const Alice =
@@ -21,15 +20,11 @@ const Bob =
       { ...Player,
         acceptWager: Fun([UInt], Null) }; 
 
-const DEADLINE = 10;
 
 export const main = Reach.App(
   {},
   [Participant('Alice', Alice), Participant('Bob', Bob)],
   (A, B) => {
-    const informTimeout = () => {
-      each([A, B], () => {
-    interact.informTimeout(); }); };
     //下注
     A.only(() => { 
       const wager = declassify(interact.wager);
@@ -40,7 +35,7 @@ export const main = Reach.App(
     B.only(() => { 
       interact.acceptWager(wager);
     });
-    B.pay(wager).timeout(DEADLINE, () => closeTo(A, informTimeout));
+    B.pay(wager);
 
     //开始游戏
     var [posA,posB,outcome] = [0,0,DRAW];
