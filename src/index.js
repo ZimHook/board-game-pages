@@ -13,7 +13,7 @@ const intToOutcome = ['Bob wins!', 'Draw!', 'Alice wins!'];
 const {standardUnit} = reach;
 const defaults = {defaultFundAmt: '10', defaultWager: '3', standardUnit};
 
-reach.setProviderByName('TestNet');
+reach.setProviderByName('MainNet');
 
 class App extends React.Component {
     constructor(props) {
