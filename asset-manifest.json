@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/board-game-pages/static/css/main.15b58ab0.chunk.css",
-    "main.js": "/board-game-pages/static/js/main.84795465.chunk.js",
-    "main.js.map": "/board-game-pages/static/js/main.84795465.chunk.js.map",
+    "main.js": "/board-game-pages/static/js/main.38fcc324.chunk.js",
+    "main.js.map": "/board-game-pages/static/js/main.38fcc324.chunk.js.map",
     "runtime-main.js": "/board-game-pages/static/js/runtime-main.6499b418.js",
     "runtime-main.js.map": "/board-game-pages/static/js/runtime-main.6499b418.js.map",
     "static/js/2.44634a00.chunk.js": "/board-game-pages/static/js/2.44634a00.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.6499b418.js",
     "static/js/2.44634a00.chunk.js",
     "static/css/main.15b58ab0.chunk.css",
-    "static/js/main.84795465.chunk.js"
+    "static/js/main.38fcc324.chunk.js"
   ]
 }
